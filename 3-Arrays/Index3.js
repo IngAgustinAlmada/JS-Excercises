@@ -7,8 +7,8 @@ console.log (year[4], year [10]);
 console.log (year.sort());
 
 /* c) Agregar un elemento al principio y al final del array (utilizar unshift y push).*/
-year.unshift("SuperEnero");
-year.push("SuperDiciembre");
+year.unshift("SubEnero");
+year.push("SupraDiciembre");
 console.log (year);
 
 /* d) Quitar un elemento del principio y del final del array (utilizar shift y pop). */
