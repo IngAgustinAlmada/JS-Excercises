@@ -1,9 +1,9 @@
 /* a) Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).*/
-var word1, letters1;
+var word1, letters;
 word1 = "Congratulations";
 console.log (word1.toUpperCase());
-letters1 = word1.length;
-console.log ("PD: La palabra " + '"' + word1 + '"' + " tiene " + letters1 + " letras.");
+letters = word1.length;
+console.log ("PD: La palabra " + '"' + word1 + '"' + " tiene " + letters + " letras.");
 
 /* b) Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
 var startWord;
