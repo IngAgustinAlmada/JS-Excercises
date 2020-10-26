@@ -19,12 +19,11 @@ for (i = 0; i < someWords.length; i++) {
 
 /* c) Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.*/
 
-var sentence;
-sentence = "";
+var sentence = "";
 
-for(i = 0; i < someWords.length ; i++ ){
+for(var i = 0; i < someWords.length ; i++ ){
 
-    sentence[i] = someWords[i];
+    sentence = sentence + someWords[i] + " " //me incomodaba que no tuviera el espacio en blanco entre palabras.
 }
 alert(sentence);
 
