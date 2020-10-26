@@ -1,9 +1,9 @@
 /* a) Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.*/
-var num1, num2, sum;
+var num1, num2, suma;
 num1 = 5;
 num2 = 6;
-sum = num1 + num2;
-console.log (sum);
+suma = num1 + num2;
+console.log (suma);
 
 /* b) Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.*/
 var pala1, pala2, orac;
