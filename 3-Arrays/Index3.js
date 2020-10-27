@@ -4,7 +4,7 @@ year = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto"
 console.log (year[4], year [10]);
 
 /* b) Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).*/
-console.log (year.sort());
+//console.log (year.sort());
 
 /* c) Agregar un elemento al principio y al final del array (utilizar unshift y push).*/
 year.unshift("SubEnero");
@@ -16,7 +16,7 @@ year.shift();
 year.pop();
 
 /* e) Invertir el orden del array (utilizar reverse). */
-console.log (year.reverse()); 
+//console.log (year.reverse()); 
 
 /* f) Unir todos los elementos del array en un único string donde cada mes este separado
 por un guión - (utilizar join). */
@@ -25,6 +25,6 @@ console.log (year.join("-"));
 /* g) Crear una copia del array de meses que contenga desde Mayo hasta Noviembre
 (utilizar slice).*/
 var yearCut;
-yearCut = year.slice(4,10);
+yearCut = year.slice(4,11);
 console.log (yearCut);
 
