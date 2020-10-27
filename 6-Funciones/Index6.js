@@ -36,7 +36,7 @@ console.log(validateInteger(5.5));
 
 function sumaEnteros(num1,num2) {
   if (typeof num1 !== "number" || typeof num2 !== "number" ){
-    // alert("Uno de los parámetros tiene error"); //Molesta la alerta en si.
+    //alert("Uno de los parámetros tiene error"); //Molesta la alerta en si.
     return "NaN";
   }else if (Number.isInteger(num1) && Number.isInteger(num2)){
   return num1 + num2;
@@ -55,24 +55,20 @@ console.log(sumaEnteros(4,7.7));
 /* e) Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual. */
 
 function tipoNumero(a,b) {
-  if (typeof a !== "number" || typeof b !== "number" ){
-   // alert("Uno de los parámetros tiene error");
+  if (typeof a!== "number" || typeof b!== "number" ){
+    //alert("Uno de los parámetros tiene error");
     return "NaN";
-  }else{
-    return "It's a Number";
   }
 }
 
 function suma(num1,num2) {
-    if(tipoNumero(num1,num2) !== "NaN"){
-    return num1 + num2;
-    }else{
-     return "NaN";
-}
-  
+    if(tipoNumero(num1,num2)!= "NaN"){
+      return num1 + num2;
+    }
 }
 
-console.log(suma (5,2));
+
+console.log(suma (5,4));
 console.log(suma (5,"2"));
 
 
