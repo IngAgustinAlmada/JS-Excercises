@@ -22,11 +22,7 @@ console.log(suma (5,"2"));
 /* c) Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero. */
 
 function validateInteger(num) {
-  if (Number.isInteger(num)){ // Nota, Number.isInteger() devulve verdadero si se cumple, el IF ya lo reconoce.
-    return "Verdadero";       // !Number.isInteger()  devulve Falso aunque sea verdadero, por la negacion "!"
-}else{
-  return "Falso";
-}
+  return Number.isInteger(num);    
 }
 
 console.log(validateInteger(5));  
@@ -37,16 +33,12 @@ console.log(validateInteger(5.5));
 function sumaEnteros(num1,num2) {
   if (typeof num1 !== "number" || typeof num2 !== "number" ){
     //alert("Uno de los parámetros tiene error"); //Molesta la alerta en si.
-    return "NaN";
-  }else if (Number.isInteger(num1) && Number.isInteger(num2)){
-  return num1 + num2;
-}else{
-    if(!Number.isInteger(num1)){
-      return("Error en " + num1 + " se redondea a " + Math.round(num1));
-    }else{
-      return("Error en " + num2 + " se redondea a " + Math.round(num2));
-    }
-}
+    return NaN;
+  } else if (Number.isInteger(num1) && Number.isInteger(num2)) {
+    return num1 + num2;
+  } else {
+    return Math.round(num1 + num2);
+  }
 }
 console.log(sumaEnteros(4,7));
 console.log(sumaEnteros(4,"7"));
